@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <h1>Галерея зображень</h1>
+    <div class="gallery">
+        <!-- Велике зображення -->
+        <div class="big-image">
+            <img id="mainImage" src="images/big_picture_1.jpg" alt="Велике зображення">
+        </div>
+
+        <!-- Маленькі зображення -->
+        <div class="thumbnails">
+            <img src="images/small_picture_1.jpg" alt="Маленьке зображення 1" onclick="changeImage('images/big_picture_1.jpg')">
+            <img src="images/small_picture_2.jpg" alt="Маленьке зображення 2" onclick="changeImage('images/big_picture_2.jpg')">
+            <img src="images/small_picture_3.jpg" alt="Маленьке зображення 3" onclick="changeImage('images/big_picture_3.jpg')">
+            <img src="images/small_picture_4.jpg" alt="Маленьке зображення 4" onclick="changeImage('images/big_picture_4.jpg')">
+            <img src="images/small_picture_5.jpg" alt="Маленьке зображення 5" onclick="changeImage('images/big_picture_5.jpg')">
+        </div>
+    </div>
+
+    <script>
+        // Функція для зміни великого зображення
+        function changeImage(imageSrc) {
+            document.getElementById('mainImage').src = imageSrc;
+        }
+    </script>
+</body>
+</html>

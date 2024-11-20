@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.power-bank-container {
+    width: 240px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.power-bank-image img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.power-bank-info {
+    padding: 10px;
+}
+
+.power-bank-info h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.power-bank-info p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.power-bank-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.buy {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn.buy:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 6px rgba(0, 128, 0, 0.2);
+}
+
+.btn.delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn.delete:hover {
+    background-color: #e53935;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.2);
+}
